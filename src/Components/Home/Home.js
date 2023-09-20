@@ -10,6 +10,10 @@ const Home = () => {
     // Use the navigate function to navigate to the login page
     navigate('/login');
   };
+  const handleSignUp = () => {
+    // Use the navigate function to navigate to the sign-up page
+    navigate('/signup');
+  };
   return (
     <div className='home'>
         <div className='left-h'>
@@ -38,7 +42,12 @@ const Home = () => {
       >
         Login
       </button>
-               <button className='btn'>Sign Up</button>
+      <button
+            className='btn'
+            onClick={handleSignUp}
+          >
+            Sign Up
+          </button>
             </div>
             <div className='image-container'>
           <img  className = "image" src="./Images/Home_image.jpg" alt="Home Image" />

@@ -1,83 +1,100 @@
-
 /* Sign_up.css */
 
-/* Remove the overflow: hidden from .signup-container */
+
+
 .signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  /* Enable scrolling for the entire page */
-  body, html {
-    height: 100%; /* Ensure full height of the viewport */
-    overflow-y: auto; /* Enable vertical scrolling for the entire page */
-  }
-  
-  .card {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    margin: auto; /* Center the card horizontally */
-  }
-  
-  /* Rest of your existing CSS styles... */
-  
-  
-  
-  
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .input-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .form-container {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-right: 3rem; 
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.25rem;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  width: 100%;
+  max-width: 70rem;
+  margin:  auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  /* Add some padding to these specific fields */
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  margin: 0.5rem 0;
+}
+
+/* Add spacing for specific input fields */
+.input-group input[name="lineOfBusiness"],
+.input-group input[name="country"],
+.input-group input[name="jobTitle"],
+.input-group input[name="landline"] {
+  margin-right: 0.3125rem;
+}
+
+.form-container {
+  margin-top: 1.25rem;
+}
+
+.form-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-container .input-group {
+  width: 40%;
+  margin-bottom: 0.9375rem;
+}
+.btn-container {
+  text-align: center;
+  margin-top: 1rem; /* Adjust the margin as needed */
+}
+.submit-button {
+  background-color: var(--orange);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
+  align-self: center;
+
+}
+
+.submit-button:hover {
+  background-color: black;
+}
+
+
+
+
+
