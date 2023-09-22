@@ -77,7 +77,7 @@
   text-align: center;
   margin-top: 1rem; /* Adjust the margin as needed */
 }
-.submit-button {
+.proceed-button {
   background-color: var(--orange);
   color: #fff;
   padding: 10px 20px;

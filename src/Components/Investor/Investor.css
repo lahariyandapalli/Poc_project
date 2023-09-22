@@ -1,0 +1,36 @@
+/* InvestorPage.css */
+
+/* Define a base font size for the html element */
+html {
+    font-size: 16px; /* You can adjust this base font size as needed */
+  }
+  
+  /* Container styling */
+  .investor-container {
+    width: 50rem; /* Equivalent to 500px (500 / 16 = 31.25rem) */
+    margin: 0 auto;
+    padding: 1.25rem; /* Equivalent to 20px */
+    background-color: #fff;
+    border: 0.0625rem solid #ccc; /* Equivalent to 1px */
+    border-radius: 0.4rem; /* Equivalent to 5px */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Equivalent to 10px */
+    
+    /* Center the container horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Heading styling */
+  .investor-container h2 {
+    font-size: 1.5rem; /* Equivalent to 24px */
+    margin-bottom: 1.25rem; /* Equivalent to 20px */
+  }
+  
+  /* Scrollable container */
+  .scroll-container {
+    max-height: 25rem; /* Equivalent to 400px */
+    overflow-y: auto;
+  }
+  
