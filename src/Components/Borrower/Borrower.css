@@ -1,0 +1,70 @@
+/* Borrower.css */
+
+/* Container styling */
+.borrower-container {
+    max-width: 50rem; /* Equivalent to 500px */
+    margin: 0 auto;
+    padding: 1.25rem; /* Equivalent to 20px */
+    background-color: #fff;
+    border: 0.0625rem solid #ccc; /* Equivalent to 1px */
+    border-radius: 0.4rem; /* Equivalent to 5px */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Equivalent to 10px */
+    
+    /* Center the container horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Heading styling */
+  .borrower-container h2 {
+    font-size: 1.5rem; /* Equivalent to 24px */
+    margin-bottom: 1.25rem; /* Equivalent to 20px */
+  }
+  
+  /* Form styling */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1rem; /* Gap between form fields */
+  }
+  
+  /* Input field styling */
+  .form-group {
+    margin-bottom: 1rem; /* Spacing between form groups */
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group select,
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem; /* Adjust padding as needed */
+    border: 0.0625rem solid #ccc; /* Equivalent to 1px */
+    border-radius: 0.25rem; /* Equivalent to 4px */
+    font-size: 1rem; /* Equivalent to 16px */
+  }
+  
+  /* Button styling */
+  .submit-button {
+    background-color: #007bff; /* Example button color */
+    color: #fff;
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    border: none;
+    border-radius: 0.25rem; /* Equivalent to 4px */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3; /* Example hover color */
+  }
+  
+  /* Remove scrollbar */
+  .borrower-container::-webkit-scrollbar {
+    display: none;
+  }
+  

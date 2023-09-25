@@ -29,8 +29,4 @@ html {
   }
   
   /* Scrollable container */
-  .scroll-container {
-    max-height: 25rem; /* Equivalent to 400px */
-    overflow-y: auto;
-  }
   

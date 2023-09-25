@@ -149,6 +149,11 @@ const InvestorPage = () => {
             />
           </div>
         </form>
+        <div className="btn-container">
+          <button type="submit" className="submit-button">
+            Sign Up
+          </button>
+        </div>
       </div>
     </div>
   );
