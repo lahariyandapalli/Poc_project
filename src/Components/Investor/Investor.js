@@ -1,3 +1,4 @@
+// InvestorPage.js
 import React, { useState } from 'react';
 import './Investor.css';
 
@@ -16,8 +17,6 @@ const InvestorPage = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    // Validation logic here...
-
     setFormData({
       ...formData,
       [name]: value,
@@ -149,12 +148,12 @@ const InvestorPage = () => {
             />
           </div>
         </form>
+        </div>
         <div className="btn-container">
-          <button type="submit" className="submit-button">
+          <button type="signup" className="signup-button">
             Sign Up
           </button>
         </div>
-      </div>
     </div>
   );
 };

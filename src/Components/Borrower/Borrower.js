@@ -146,13 +146,12 @@ const BorrowerPage = () => {
             required
           />
         </div>
-
+        </form>
         <div className="btn-container">
-          <button type="submit" className="submit-button">
+          <button type="signup" className="signup-button">
             Sign Up
           </button>
         </div>
-      </form>
     </div>
   );
 };

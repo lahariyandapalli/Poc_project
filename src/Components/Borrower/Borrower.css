@@ -1,21 +1,20 @@
-/* Borrower.css */
-
 /* Container styling */
 .borrower-container {
-    max-width: 50rem; /* Equivalent to 500px */
-    margin: 0 auto;
-    padding: 1.25rem; /* Equivalent to 20px */
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Add top margin to center vertically */
+    padding: 20px;
     background-color: #fff;
-    border: 0.0625rem solid #ccc; /* Equivalent to 1px */
-    border-radius: 0.4rem; /* Equivalent to 5px */
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* Equivalent to 10px */
-    
-    /* Center the container horizontally and vertically */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  
   
   /* Heading styling */
   .borrower-container h2 {
@@ -48,23 +47,41 @@
     font-size: 1rem; /* Equivalent to 16px */
   }
   
-  /* Button styling */
-  .submit-button {
-    background-color: #007bff; /* Example button color */
+  /* Submit button */
+.signup-button {
+    width: 100%;
+    padding: 10px 20px; /* Updated padding */
+    font-size: 15px;
+    background-color:var(--orange); /* Replace with your desired color code */
     color: #fff;
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
     border: none;
-    border-radius: 0.25rem; /* Equivalent to 4px */
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    outline: none; /* Remove the default outline */
   }
   
-  .submit-button:hover {
-    background-color: #0056b3; /* Example hover color */
+  /* Submit button hover state */
+  .signup-button:hover {
+    background-color: black;
+  }
+
+  /* Button container styling */
+.btn-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 1rem; /* Add top margin as needed */
   }
   
-  /* Remove scrollbar */
-  .borrower-container::-webkit-scrollbar {
-    display: none;
+  @media (max-width: 420px) {
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
   }
+  
+
+  
+  
+  
   
