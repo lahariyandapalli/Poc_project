@@ -1,16 +1,46 @@
-.header{
+/* Header.css */
+
+/* Your existing styles for the main menu */
+.header {
     display: flex;
     justify-content: space-between;
-}
-.header-menu{
+  }
+  
+  .header-menu {
     list-style: none;
     display: flex;
     gap: 2rem;
     color: white;
-}
-
-
-.header-menu>li:hover{
+    padding: 0; /* Remove default list padding */
+  }
+  
+  .header-menu li {
     cursor: pointer;
+  }
+  
+  .header-menu li:hover {
     color: var(--orange);
-}
+  }
+  
+  /* Styles for the sub-menu container */
+  .sub-menu-container {
+    padding-left: 10px; /* Add left padding to create space for the bullets */
+    margin-top: 5px; /* Add margin to separate sub-menu from main menu items */
+  }
+  
+  /* Styles for the sub-menu items */
+  .sub-menu {
+    list-style: none; /* Remove bullets for sub-menu */
+    padding: 0; /* Remove default list padding for sub-menu */
+  }
+  
+  .sub-menu li {
+    cursor: pointer;
+  }
+  
+  .sub-menu li:hover {
+    color: var(--orange);
+  }
+  
+  /* Add any other styling as needed */
+  
