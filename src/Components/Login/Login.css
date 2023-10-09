@@ -1,79 +1,85 @@
-/* Login Container */
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(135deg, #34495e, #2c3e50);
-  }
-  
-  /* Card Styles */
-  .card {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    padding: 30px;
-    border-radius: 10px;
-    width: 400px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .card h2 {
-    margin-bottom: 20px;
-    color: var(--orange);
-  }
-  
-  /* Input Styles */
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-bottom: 2px solid var(--orange);
-    background-color: transparent;
-    color: #333;
-    transition: border-bottom-color 0.3s;
-  }
-  
-  .input-group input::placeholder {
-    color: #aaa;
-  }
-  
-  .input-group input:focus {
-    outline: none;
-    border-bottom-color: var(--orange);
-  }
-  
-  /* Button Styles */
-  .login-button {
-    background-color: var(--orange);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .login-button:hover {
-    background-color: black;
-  }
-  
-  /* Forgot Password Link */
-  .forgot-password {
-    margin-top: 15px;
-  }
-  
-  .forgot-password a {
-    text-decoration: none;
-    color:var(--orange);
-    font-size: 1rem;
-  }
-  
-  .forgot-password a:hover {
-    text-decoration: underline;
-  }
-  
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  padding-right: 5rem;
+}
+
+.login-box {
+  width: 33rem;
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  position: relative;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color:var(--orange);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color:black;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+body {
+  font-size: 18px;
+}

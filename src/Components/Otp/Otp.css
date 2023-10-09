@@ -1,0 +1,72 @@
+/* OTP Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* OTP Form */
+  .otp-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    max-width: 80%;
+  }
+  
+  /* OTP Heading */
+  .otp-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Input */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Form Input Field */
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+  
+  /* Submit Button */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Style the button on hover or focus */
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #0056b3;
+  }
+  
+  /* Resend Link */
+  .resend-link {
+    margin-top: 20px;
+  }
+  
+  /* Style the resend link */
+  .resend-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Style the resend link on hover */
+  .resend-link a:hover {
+    text-decoration: underline;
+  }
+  
