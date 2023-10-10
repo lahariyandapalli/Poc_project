@@ -1,0 +1,13 @@
+body {
+    font-size: 18px;
+}
+
+.container {
+    position: absolute;
+    right: 5rem;
+    width: 35rem;
+    height: 30rem;
+    border-top-left-radius: 2.8rem;
+    border-bottom-right-radius: 2.8rem;
+    margin-left: 3rem;
+}

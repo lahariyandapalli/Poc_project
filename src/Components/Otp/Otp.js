@@ -9,7 +9,7 @@ function Otp() {
     // Handle any logic here if needed
     
     // Redirect to the home page (/)
-    navigate('/');
+    navigate('/home');
   };
 
   return (
