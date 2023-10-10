@@ -1,8 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Otp.css'; // Import your CSS file
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import './Otp.css';
 
 function Otp() {
+  const navigate = useNavigate(); // Initialize navigate
+
+  const handleProceed = () => {
+    // Handle any logic here if needed
+    
+    // Redirect to the home page (/)
+    navigate('/');
+  };
+
   return (
     <div className="container">
       <div className="otp-box">
@@ -12,12 +21,14 @@ function Otp() {
             <label htmlFor="otp">OTP</label>
             <input type="text" id="otp" className="form-control" placeholder="Enter OTP" />
           </div>
-          <button className="btn btn-primary">
-            <p>Submit</p>
-          </button>
+          <div className="btn-container">
+            <button type="button" onClick={handleProceed} className="submit-button">
+              Submit
+            </button>
+          </div>
         </form>
         <p className="resend-link">
-          Didn't receive OTP? <Link to="/resend">Resend OTP</Link>
+          Didn't receive OTP? <span onClick={() => navigate('/resend')}>Resend OTP</span>
         </p>
       </div>
     </div>

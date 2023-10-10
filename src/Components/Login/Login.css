@@ -1,9 +1,11 @@
 .container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100vh;
-  padding-right: 5rem;
+  position: absolute;
+    right:5rem;
+    width: 35rem;
+    height: 30rem;
+    border-top-left-radius: 2.8rem;
+    border-bottom-right-radius: 2.8rem;
+    margin-left: 3rem;
 }
 
 .login-box {
@@ -51,19 +53,26 @@
   font-size: 18px;
 }
 
-.btn-primary {
-  background-color:var(--orange);
+.btn-container {
+  text-align: center;
+  margin-top: 1rem; /* Adjust the margin as needed */
+}
+.next-button {
+  background-color: var(--orange);
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
+  align-self: center;
+
+}
+.next-button:hover {
+  background-color: black;
 }
 
-.btn-primary:hover {
-  background-color:black;
-}
 
 .divider {
   display: flex;

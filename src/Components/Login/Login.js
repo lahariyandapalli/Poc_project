@@ -1,8 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './Login.css';
 
 function Login() {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+  const handleProceed = () => {
+    // Handle logic before navigating to the next page
+    // For example, validation or API calls
+
+    // Navigate to the password page
+    navigate('/pswd');
+  };
+
   return (
     <div className="container">
       <div className="login-box">
@@ -16,11 +26,11 @@ function Login() {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" className="form-control" placeholder="Enter your password" />
           </div>
-          <Link to="/pswd"> {/* Use Link to navigate */}
-            <button className="btn btn-primary">
-              <p>Next</p>
+          <div className="btn-container">
+            <button type="button" onClick={handleProceed} className="next-button">
+              Next
             </button>
-          </Link>
+          </div>
         </form>
       </div>
     </div>
