@@ -10,6 +10,7 @@ import Borrower from "./Components/Borrower/Borrower"
 import Corporate_loanpage from './Components/Corporate_loanpage/Corporate_loanpage';
 import Password from "./Components/Password/Password"
 import Otp from "./Components/Otp/Otp"
+import Auth from './Components/Auth';
 
 
 
@@ -18,15 +19,17 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
+          <Route path="/" element={<Auth />} />
+          <Route path="/login" element={<Auth />} />
           {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/" element={<Home/>} />
+          <Route path="/home" element={<Home />} />
           <Route path="/signup" element={<Sign_Up />} />
-          <Route path="/investor" element={<Investor/>} />
-          <Route path="/borrower" element={<Borrower/>} />
-          <Route path="/corporateloan" element={<Corporate_loanpage/>} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/pswd" element={<Password />} />
-          <Route path="/otp" element={<Otp/>} />
+          <Route path="/investor" element={<Investor />} />
+          <Route path="/borrower" element={<Borrower />} />
+          <Route path="/corporateloan" element={<Corporate_loanpage />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="/pswd" element={<Password />} /> */}
+          {/* <Route path="/otp" element={<Otp/>} /> */}
         </Routes>
       </div>
     </BrowserRouter>
