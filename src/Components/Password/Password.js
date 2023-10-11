@@ -1,16 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-import './Password.css'; // Import your CSS file
+import './Password.css';
 
-function Password() {
-  const navigate = useNavigate(); // Initialize useNavigate hook
-
+function Password({ onNext }) {
   const handleProceed = () => {
-    // Handle logic before navigating to the next page
-    // For example, validation or API calls
-
-    // Navigate to the OTP page
-    navigate('/otp');
+    // Handle logic before proceeding to the next step
+    onNext();
   };
 
   return (
