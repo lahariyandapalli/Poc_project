@@ -1,0 +1,75 @@
+/* LoginManager.css */
+
+/* Style for the Login component */
+.login-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+/* Style for the Password component */
+.password-form {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Style for the OTP component */
+.otp-box {
+    background-color: #d0d0d0;
+    padding: 20px;
+    border: 1px solid #bbb;
+}
+
+/* Create a container for card containers and center it */
+.card-container-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    right: 5rem;
+    position: absolute;
+}
+
+/* Style for the card containers */
+.card-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30rem;
+    height: 30rem;
+    margin: 10px;
+}
+
+/* Your existing CSS styles for the buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Add space between the buttons */
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  
+  .login-button {
+    background-color: var(--orange);
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 7rem;
+    font-size: 1rem;
+  }
+  
+  .button:hover {
+    background-color: black;
+  }
+  
+  .small-image {
+    width: 43rem; /* Set the width as needed */
+    height: auto; 
+    position:relative;
+    right: 7rem;
+  }
+  
