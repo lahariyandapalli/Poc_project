@@ -50,17 +50,14 @@
     border:2px solid var(--orange) ;
 }
 
-.image {
+
+.video-container{
     position: absolute;
     top: 10rem;
     right:5rem;
-    width: 35rem;
+    width: 25rem;
     height: 30rem;
     border-top-left-radius: 2.8rem;
     border-bottom-right-radius: 2.8rem;
     margin-left: 3rem;
   }
-
-
-
-
