@@ -1,100 +1,203 @@
 /* Investor.css */
 
+ 
+
 /* Container styling */
+
 .investor-container {
+
   width: 100%;
+
   max-width: 700px;
+
   margin: 0 auto; /* Center horizontally */
+
   margin-top: 20px; /* Add top margin to center vertically */
+
   padding: 20px;
+
   background-color: #fff;
+
   border: 1px solid #ccc;
+
   border-radius: 5px;
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
+
 }
+
+ 
 
 /* Heading styling */
+
 .investor-container h2 {
+
   font-size: 24px;
+
   margin-bottom: 20px;
+
 }
+
+ 
 
 /* Form grid */
+
 .form-grid {
+
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 15px;
+
 }
+
+ 
 
 /* Form group with margin between input fields */
+
 .form-group {
+
   margin-bottom: 20px; /* Add margin to create space between input fields */
+<<<<<<< HEAD
   margin-right: 30px;
+=======
+
+  margin-right: 30px;
+
+>>>>>>> 95ad50e445b23d590a7deb6951c25e40c200a56a
 }
+
+ 
 
 /* Label styling */
+
 .form-group label {
+
   display: block;
+
   font-size: 14px;
+
   color: #757575;
+
 }
+
+ 
 
 /* Input and select styling */
+
 .form-group input,
+
 .form-group select {
+
   width: 100%;
+
   padding: 8px 10px;
+
   font-size: 15px;
+
   border: 1px solid #d5dbd9;
+
   border-radius: 3px;
+
   transition: border-color 0.3s ease;
+
 }
+
+ 
 
 /* Input and select focus state */
+
 .form-group input:focus,
+
 .form-group select:focus {
+
   border: 1px solid #fec107;
+
 }
+
+ 
 
 /* Add margin-right for even-numbered elements to create a gap between side-by-side inputs */
+
 .user-input-box:nth-child(even) {
+
   margin-right: 15px; /* Adjust as needed for the desired gap */
+
 }
+
+ 
 
 /* Submit button */
+
 .signup-button {
+
   width: 40%;
+
   padding: 10px 20px; /* Updated padding */
+
   font-size: 15px;
+
   background-color:var(--orange); /* Replace with your desired color code */
+
   color: #fff;
+
   border: none;
+
   border-radius: 5px;
+
   cursor: pointer;
+
   transition: background-color 0.3s;
+
   outline: none; /* Remove the default outline */
+
 }
+
+ 
 
 /* Submit button hover state */
+
 .signup-button:hover {
+
   background-color: black;
+
 }
+
 .btn-container {
+
   display: flex;
+
   justify-content: center; /* Center horizontally */
+
   align-items: center; /* Center vertically */
+
   margin-top: 1rem; /* Add top margin as needed */
+
 }
 
+ 
 
+ 
+
+ 
 
 /* Media query for smaller screens */
+
 @media (max-width: 420px) {
+
   .form-grid {
+
     grid-template-columns: 1fr;
+
   }
+
 }

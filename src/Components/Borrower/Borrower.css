@@ -1,87 +1,161 @@
 /* Container styling */
+
 .borrower-container {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto; /* Center horizontally */
-    margin-top: 20px; /* Add top margin to center vertically */
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  /* Heading styling */
-  .borrower-container h2 {
-    font-size: 1.5rem; /* Equivalent to 24px */
-    margin-bottom: 1.25rem; /* Equivalent to 20px */
-  }
-  
-  /* Form styling */
-  .form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 1rem; /* Gap between form fields */
-  }
-  
-  /* Input field styling */
-  .form-group {
-    margin-bottom: 1rem; /* Spacing between form groups */
-  }
-  
-  .form-group label {
-    font-weight: bold;
-  }
-  
-  .form-group select,
-  .form-group input {
-    width: 100%;
-    padding: 0.5rem; /* Adjust padding as needed */
-    border: 0.0625rem solid #ccc; /* Equivalent to 1px */
-    border-radius: 0.25rem; /* Equivalent to 4px */
-    font-size: 1rem; /* Equivalent to 16px */
-  }
-  
-  /* Submit button */
+
+  width: 100%;
+
+  max-width: 700px;
+
+  margin: 0 auto; /* Center horizontally */
+
+  margin-top: 20px; /* Add top margin to center vertically */
+
+  padding: 20px;
+
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+
+
+/* Heading styling */
+
+.borrower-container h2 {
+
+  font-size: 1.5rem; /* Equivalent to 24px */
+
+  margin-bottom: 1.25rem; /* Equivalent to 20px */
+
+}
+
+
+
+/* Form styling */
+
+.form-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+
+  gap: 1rem; /* Gap between form fields */
+
+}
+
+
+
+/* Input field styling */
+
+.form-group {
+
+  margin-bottom: 1rem; /* Spacing between form groups */
+
+}
+
+
+
+.form-group label {
+
+  font-weight: bold;
+
+}
+
+
+
+.form-group select,
+
+.form-group input {
+
+  width: 100%;
+
+  padding: 0.5rem; /* Adjust padding as needed */
+
+  border: 0.0625rem solid #ccc; /* Equivalent to 1px */
+
+  border-radius: 0.25rem; /* Equivalent to 4px */
+
+  font-size: 1rem; /* Equivalent to 16px */
+
+}
+
+
+
+/* Submit button */
+
 .signup-button {
-    width: 100%;
-    padding: 10px 20px; /* Updated padding */
-    font-size: 15px;
-    background-color:var(--orange); /* Replace with your desired color code */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    outline: none; /* Remove the default outline */
-  }
-  
-  /* Submit button hover state */
-  .signup-button:hover {
-    background-color: black;
-  }
 
-  /* Button container styling */
+  width: 100%;
+
+  padding: 10px 20px; /* Updated padding */
+
+  font-size: 15px;
+
+  background-color:var(--orange); /* Replace with your desired color code */
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+
+  outline: none; /* Remove the default outline */
+
+}
+
+
+
+/* Submit button hover state */
+
+.signup-button:hover {
+
+  background-color: black;
+
+}
+
+
+
+/* Button container styling */
+
 .btn-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-top: 1rem; /* Add top margin as needed */
-  }
-  
-  @media (max-width: 420px) {
-    .form-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
 
-  
-  
-  
-  
+  display: flex;
+
+  justify-content: center; /* Center horizontally */
+
+  align-items: center; /* Center vertically */
+
+  margin-top: 1rem; /* Add top margin as needed */
+
+}
+
+
+
+@media (max-width: 420px) {
+
+  .form-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
