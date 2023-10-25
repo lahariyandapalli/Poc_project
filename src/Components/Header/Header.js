@@ -39,7 +39,7 @@ const Header = () => {
           onMouseLeave={closeSubMenus}
           onClick={handleCorporateLoanClick} // Add onClick handler
         >
-          Products
+          Products&nbsp;&nbsp;&nbsp;
           <span className={`arrow ${showSubMenu1 ? 'open' : ''}`}>
             <FontAwesomeIcon icon={faAngleDown} />
           </span>

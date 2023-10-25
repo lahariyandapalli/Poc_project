@@ -23,8 +23,8 @@
     color: white;
     text-overflow: inherit;
     margin-top: 2rem;
-    
-
+   
+ 
 }
 .para{
     font-size: 1.1rem;
@@ -33,7 +33,7 @@
     letter-spacing: 1px;
     width: 80%;
     color:white;
-
+ 
 }
 .home-buttons>:nth-child(1)
 {
@@ -49,15 +49,15 @@
     width: 8rem;
     border:2px solid var(--orange) ;
 }
-
-
-.video-container{
+ 
+.image {
     position: absolute;
     top: 10rem;
-    right:5rem;
-    width: 25rem;
+    right:3rem;
+    width: 35rem;
     height: 30rem;
     border-top-left-radius: 2.8rem;
     border-bottom-right-radius: 2.8rem;
     margin-left: 3rem;
   }
+ 

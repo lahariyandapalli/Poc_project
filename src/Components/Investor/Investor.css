@@ -33,6 +33,7 @@
 /* Form group with margin between input fields */
 .form-group {
   margin-bottom: 20px; /* Add margin to create space between input fields */
+  margin-right: 30px;
 }
 
 /* Label styling */

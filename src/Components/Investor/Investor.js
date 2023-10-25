@@ -1,8 +1,8 @@
-// InvestorPage.js
 import React, { useState } from 'react';
 import './Investor.css';
+import { useNavigate } from 'react-router-dom';
 
-const InvestorPage = () => {
+function InvestorPage() {
   const [formData, setFormData] = useState({
     lineOfBusiness: '',
     firmName: '',
@@ -15,63 +15,75 @@ const InvestorPage = () => {
     mobile: '',
   });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  const [passwordData, setPasswordData] = useState({
+    password: '',
+    confirmPassword: '',
+  });
+
+  const [showPassword, setShowPassword] = useState(false);
+  const [currentPage, setCurrentPage] = useState('form');
+  const navigate = useNavigate();
+
+  const handleProceed = (direction) => {
+    if (direction === 'next') {
+      setCurrentPage('password');
+    } else if (direction === 'back') {
+      setCurrentPage('form');
+    }
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert('Investor sign-up successful!');
-    // You can add logic here to submit the data
+  const handleNavigateToHome = () => {
+    navigate('/');
   };
 
   return (
     <div className="investor-container">
       <h2>Investor Page</h2>
-      <div className="scroll-container">
-        <form onSubmit={handleSubmit} className="form-grid">
-          <div className="form-group">
-            <label htmlFor="lineOfBusiness">Line of Business:</label>
-            <select
-              id="lineOfBusiness"
-              name="lineOfBusiness"
-              value={formData.lineOfBusiness}
-              onChange={handleChange}
-              required
-            >
-              <option value="">Select Line of Business</option>
-              <option value="NBFC">NBFC</option>
-              <option value="Investment Banking">Investment Banking</option>
-              <option value="Banks">Banks</option>
-              <option value="Insurance">Insurance</option>
-              <option value="Mutual Fund">Mutual Fund</option>
-            </select>
-          </div>
+      {currentPage === 'form' && (
+        <div className="scroll-container">
+          <form className="form-grid">
+            <div className="form-group">
+              <label htmlFor="lineOfBusiness">Line of Business:</label>
+              <select
+                id="lineOfBusiness"
+                name="lineOfBusiness"
+                value={formData.lineOfBusiness}
+                onChange={(e) =>
+                  setFormData({ ...formData, lineOfBusiness: e.target.value })
+                }
+                required
+              >
+                <option value="">Select Line of Business</option>
+                <option value="NBFC">NBFC</option>
+                <option value="Investment Banking">Investment Banking</option>
+                <option value="Banks">Banks</option>
+                <option value="Insurance">Insurance</option>
+                <option value="Mutual Fund">Mutual Fund</option>
+              </select>
+            </div>
 
-          <div className="form-group">
-            <label htmlFor="firmName">Name of the Firm:</label>
-            <input
-              type="text"
-              id="firmName"
-              name="firmName"
-              value={formData.firmName}
-              onChange={handleChange}
-              required
-            />
-          </div>
+            <div className="form-group">
+              <label htmlFor="firmName">Name of the Firm:</label>
+              <input
+                type="text"
+                id="firmName"
+                name="firmName"
+                value={formData.firmName}
+                onChange={(e) =>
+                  setFormData({ ...formData, firmName: e.target.value })
+                }
+                required
+              />
+            </div>
 
-          <div className="form-group">
+            <div className="form-group">
             <label htmlFor="location">Location of the Firm:</label>
             <input
               type="text"
               id="location"
               name="location"
               value={formData.location}
-              onChange={handleChange}
+              
               required
             />
           </div>
@@ -83,7 +95,7 @@ const InvestorPage = () => {
               id="country"
               name="country"
               value={formData.country}
-              onChange={handleChange}
+              
               required
             />
           </div>
@@ -95,7 +107,7 @@ const InvestorPage = () => {
               id="contactPerson"
               name="contactPerson"
               value={formData.contactPerson}
-              onChange={handleChange}
+              
               required
             />
           </div>
@@ -107,7 +119,7 @@ const InvestorPage = () => {
               id="jobTitle"
               name="jobTitle"
               value={formData.jobTitle}
-              onChange={handleChange}
+              
               required
             />
           </div>
@@ -119,7 +131,7 @@ const InvestorPage = () => {
               id="officialEmail"
               name="officialEmail"
               value={formData.officialEmail}
-              onChange={handleChange}
+              
               required
             />
           </div>
@@ -131,7 +143,7 @@ const InvestorPage = () => {
               id="landline"
               name="landline"
               value={formData.landline}
-              onChange={handleChange}
+              
               required
             />
           </div>
@@ -143,19 +155,67 @@ const InvestorPage = () => {
               id="mobile"
               name="mobile"
               value={formData.mobile}
-              onChange={handleChange}
+              
               required
             />
           </div>
-        </form>
+          </form>
+          <div className="button-container">
+            <button type="button" onClick={() => handleProceed('next')} className="signup-button">
+              Next
+            </button>
+          </div>
         </div>
-        <div className="btn-container">
-          <button type="signup" className="signup-button">
-            Sign Up
-          </button>
+      )}
+
+      {currentPage === 'password' && (
+        <div className="scroll-container">
+          <form>
+            <div className="form-group">
+              <label htmlFor="password">Password:</label>
+              <div className="password-input">
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  id="password"
+                  name="password"
+                  value={passwordData.password}
+                  onChange={(e) =>
+                    setPasswordData({ ...passwordData, password: e.target.value })
+                  }
+                  required
+                />
+                <i
+                  className={`password-toggle ${showPassword ? 'visible' : 'hidden'}`}
+                  onClick={() => setShowPassword(!showPassword)}
+                ></i>
+              </div>
+            </div>
+            <div className="form-group">
+              <label htmlFor="confirmPassword">Confirm Password:</label>
+              <input
+                type={showPassword ? 'text' : 'password'}
+                id="confirmPassword"
+                name="confirmPassword"
+                value={passwordData.confirmPassword}
+                onChange={(e) =>
+                  setPasswordData({ ...passwordData, confirmPassword: e.target.value })
+                }
+                required
+              />
+            </div>
+          </form>
+          <div className="button-container">
+            <button type="button" onClick={() => handleProceed('back')} className="signup-button">
+              Back
+            </button>
+            <button type="button" onClick={handleNavigateToHome} className="signup-button">
+              Submit
+            </button>
+          </div>
         </div>
+      )}
     </div>
   );
-};
+}
 
 export default InvestorPage;
