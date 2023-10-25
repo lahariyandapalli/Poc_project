@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import Header from '../Header/Header'
 import { useNavigate } from 'react-router-dom';
+// import VideoFile from './public/Images/video.mp4';
 
 const Home = () => {
   const navigate = useNavigate(); // Create a navigate function
@@ -41,12 +42,20 @@ const Home = () => {
           >
             Sign Up
           </button>
+<<<<<<< HEAD
           <button
             className="btn btn-dark btn-block"
             onClick={handleLogin}
           >
             Login
           </button>
+=======
+            </div>
+            <div className='video-container'>
+               <video width="100%" height="500" autoPlay loop muted style={{maxWidth:"100%"}}>
+               <source src="./Images/video.mp4" type="video/mp4" />
+            </video>
+>>>>>>> 76004dfbc39a73dcf78d2d20405b1b8d7a7eb481
         </div>
         <div className='image-container'>
           <img className="image" src="./Images/Home_image.jpg" alt="Home Image" />
@@ -56,4 +65,8 @@ const Home = () => {
   )
 }
 
+<<<<<<< HEAD
 export default Home;
+=======
+export default Home
+>>>>>>> 76004dfbc39a73dcf78d2d20405b1b8d7a7eb481
