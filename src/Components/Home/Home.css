@@ -49,27 +49,17 @@
     width: 8rem;
     border:2px solid var(--orange) ;
 }
-<<<<<<< HEAD
  
 .image {
     position: absolute;
     top: 10rem;
     right:3rem;
-=======
 
-  .image{
-    position: absolute;
-    right:4rem;
->>>>>>> 95ad50e445b23d590a7deb6951c25e40c200a56a
     width: 35rem;
     height: 30rem;
     border-top-right-radius: 2.8rem;
     border-bottom-left-radius: 2.8rem;
     margin-left: 3rem;
-<<<<<<< HEAD
-  }
- 
-=======
     padding-top: 8rem;
   }
->>>>>>> 95ad50e445b23d590a7deb6951c25e40c200a56a
+
