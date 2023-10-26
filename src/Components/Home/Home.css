@@ -1,65 +1,72 @@
-.home{
-    display: flex;
-    justify-content: space-between;
-}
-.left-h{
-    padding:2rem;
-    padding-top: 1.5rem;
-    flex: 3;
-    display: flex;
-    gap: 2rem;
-    flex-direction: column;
-}
-.right-h{
-    flex:1;
-    position: relative;
-}
-.heading{
+.home {
     display: flex;
     flex-direction: column;
-    gap:1.5rem;
+    align-items: center;
+    text-align: center;
+    background: var(--planCard); /* Apply the background color to the entire container */
+    min-height: 100vh; /* Ensure the container covers the entire viewport height */
+  }
+  
+  .content {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%; /* Ensure full height of the content container is used */
+  }
+  
+  .heading {
     font-size: 5rem;
     font-weight: bold;
     color: white;
     text-overflow: inherit;
     margin-top: 2rem;
-   
- 
-}
-.para{
+  }
+  
+  .para {
     font-size: 1.1rem;
     font-weight: 200;
     text-transform: none;
     letter-spacing: 1px;
     width: 80%;
-    color:white;
- 
-}
-.home-buttons>:nth-child(1)
-{
-    color:white;
+    color: white;
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  
+  .home-buttons > :nth-child(1) {
+    color: white;
     background-color: var(--orange);
     width: 8rem;
     margin: 2rem;
-}
-.home-buttons>:nth-child(2)
-{
-    color:white;
-    background-color:transparent;
+  }
+  
+  .home-buttons > :nth-child(2) {
+    color: white;
+    background-color: transparent;
     width: 8rem;
-    border:2px solid var(--orange) ;
-}
- 
-.image {
-    position: absolute;
-    top: 10rem;
-    right:3rem;
-
-    width: 35rem;
-    height: 30rem;
+    border: 2px solid var(--orange);
+  }
+  
+  .image-container {
+    width: 100%;
+    text-align: right;
+    padding: 2rem;
+  }
+  
+  .image {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    height: auto; /* Let the height scale proportionally */
     border-top-right-radius: 2.8rem;
     border-bottom-left-radius: 2.8rem;
-    margin-left: 3rem;
-    padding-top: 8rem;
   }
-
+  
+  
+  @media screen and (max-width: 768px) {
+    .heading {
+      font-size: xx-large;
+    }
+  }
+  
