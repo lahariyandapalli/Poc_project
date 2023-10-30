@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './LoginManager.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
+
+
 
 function LoginManager() {
   const [email, setEmail] = useState('');
@@ -8,7 +10,7 @@ function LoginManager() {
   const [otp, setOtp] = useState('');
 
   const [currentPage, setCurrentPage] = useState('login');
-  const navigate = useNavigate();
+  const navigate = useNavigate();  // Define navigate using useNavigate
 
   const handleProceed = (direction) => {
     if (direction === 'next') {
@@ -29,6 +31,7 @@ function LoginManager() {
   };
 
   const handleNavigateToHome = () => {
+    // Use the navigate function to go to the "Home" route
     navigate('/');
   };
 

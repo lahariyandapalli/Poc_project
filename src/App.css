@@ -13,10 +13,11 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow-y: auto;
 }
 
-
+body {
+  overflow: hidden;
+}
 
 .App {
   mix-blend-mode: overlay;
@@ -25,14 +26,13 @@ html, body {
   flex-direction: column;
   gap: 6rem;
   min-height: 100vh;
-  padding: 2rem;
 }
 
 /* Media queries for responsive design */
 @media (max-width: 767px) {
   /* Adjust styles for screens up to 767px wide */
   .App {
-    gap: 2rem; /* Reduce the gap for smaller screens */
+    gap: 3rem; /* Reduce the gap for smaller screens */
   }
 }
 
