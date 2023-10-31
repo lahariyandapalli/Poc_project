@@ -34,6 +34,9 @@ function LoginManager() {
     // Use the navigate function to go to the "Home" route
     navigate('/');
   };
+  const handleNavigateToProductMaster = () => {
+    navigate('/product-master');
+  };
 
   return (
     <div className="card-container-container">
@@ -106,17 +109,22 @@ function LoginManager() {
               Didn't receive OTP? <span>Resend OTP</span>
             </p>
             <div className="button-container">
-              <button type="button" onClick={() => handleProceed('back')} className="login-button">
-                Back
-              </button>
-              <button
-                type="button"
-                onClick={handleNavigateToHome}
-                className="login-button"
-              >
-                Submit
-              </button>
-            </div>
+          <button
+            type="button"
+            onClick={handleNavigateToHome}
+            className="login-button"
+          >
+            Submit
+          </button>
+          {/* Add a button to navigate to the ProductMaster component */}
+          <button
+            type="button"
+            onClick={handleNavigateToProductMaster}
+            className="login-button"
+          >
+            Go to Product Master
+          </button>
+        </div>
           </form>
         </div>
       )}

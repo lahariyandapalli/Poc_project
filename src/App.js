@@ -8,7 +8,7 @@ import Sign_Up from './Components/Sign_up/Sign_up';
 import Investor from './Components/Investor/Investor';
 import Borrower from './Components/Borrower/Borrower';
 import Corporate_loanpage from './Components/Corporate_loanpage/Corporate_loanpage';
-
+import ProductMaster from './Components/Product/ProductMaster';
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +20,7 @@ function App() {
           <Route path="/borrower" element={<Borrower />} />
           <Route path="/corporateloan" element={<Corporate_loanpage />} />
           <Route path="/login" element={<LoginManager />} />
+          <Route exact path="/product-master" element={<ProductMaster />} />
         </Routes>
       </div>
     </BrowserRouter>

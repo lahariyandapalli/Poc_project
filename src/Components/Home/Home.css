@@ -52,11 +52,10 @@
 
 .image {
   position: absolute;
-  top: 10rem;
+  top: 4rem;
   right:3rem;
-
-  width: 35rem;
-  height: 30rem;
+  width: 30rem;
+  height: 28rem;
   border-top-right-radius: 2.8rem;
   border-bottom-left-radius: 2.8rem;
   margin-left: 3rem;
