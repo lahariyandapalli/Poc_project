@@ -1,9 +1,5 @@
 /* Header.css */
 
- 
-
-/* Your existing styles for the main menu */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -36,8 +32,8 @@
     list-style: none; /* Remove bullets for sub-menu */
     padding: 10px; /* Remove default list padding for sub-menu */
     background-color: whitesmoke;
-    width: 150px;
-    height: 100px;
+    width: 190px;
+    height: 115px;
     border-radius: 10px;
     margin: 5px;
   }
